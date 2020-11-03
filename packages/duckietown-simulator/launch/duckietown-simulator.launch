@@ -1,0 +1,6 @@
+<launch>
+  <group ns="$(arg veh)"> 
+    <node pkg="duckietown-simulator" type="duckietown-simulator.py" name="duckietown-simulator" output="screen" />
+    <remap from="~/duckietown-simulator/" to="/$(arg veh)/duckietown-simulator/"/>
+  </group>
+</launch>

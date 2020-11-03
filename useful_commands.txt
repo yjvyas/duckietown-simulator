@@ -1,0 +1,1 @@
+docker run -it --rm -e ROS_MASTER_URI='http://127.0.0.1:11311/' -e ROS_IP='127.0.0.1' -e VEHICLE_NAME='fakebot' -v ~/duckietown:/home/duckietown --net=host duckietown/dt-ros-commons:daffy-amd64 /bin/bash
