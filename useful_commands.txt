@@ -1,5 +1,7 @@
 docker run -it --rm -e ROS_MASTER_URI='http://fakebot.local:11311/' -e ROS_IP='127.0.0.1' -e VEHICLE_NAME='fakebot' -v ~/duckietown:/home/duckietown --net=host duckietown/dt-ros-commons:daffy-amd64 /bin/bash
 
+dts devel run -- -e ROS_MASTER_URI=http://fakebot.local:11311/
+
 rostopic pub -r 10 /fakebot/wheels_driver_node/wheels_cmd duckietown_msgs/WheelsCmdStamped auto 0.1 0.1
 
 To run commands using dts_start_gui_tools
