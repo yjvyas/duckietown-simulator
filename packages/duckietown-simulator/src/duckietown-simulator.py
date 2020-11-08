@@ -46,7 +46,7 @@ class DuckietownSimulator(DTROS):
             accept_start_angle_deg=4, # start close to straight
             full_transparency=True,
             distortion=True
-            )  
+            ) 
 
 if __name__ == '__main__':
     # create the node
